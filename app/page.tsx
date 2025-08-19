@@ -1,8 +1,9 @@
-export default function Home() {
-  return (
-    <div>
-      <h1>Test Page</h1>
-      <p>If you can see this, the routing is working.</p>
-    </div>
-  )
+import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
+import { allBlogs } from 'contentlayer/generated'
+import Main from './Main'
+
+export default async function Page() {
+const sortedPosts = sortPosts(allBlogs)
+const posts = allCoreContent(sortedPosts)
+return <Main posts={posts} />
 }
