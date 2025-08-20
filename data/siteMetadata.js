@@ -4,26 +4,23 @@ const siteMetadata = {
   author: 'Deepak Battula',
   headerTitle: 'Deepak Battula',
   description:
-    'This is a Website-Portfolio of Deepak Battula, collection of my projects, blogs and ideas.',
+    'Hello. This is a Website-Portfolio of Deepak Battula, collection of my projects, blogs and ideas. Check out my about page to know more about me.',
   language: 'English, Hindi, Telugu',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://new-portfolio-r18dvf7us-deepakachyuthas-projects.vercel.app/about',
+  siteRepo: 'https://github.com/deepakachyutha/new-portfolio',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'deepakbattula9160@gmail.com',
   github: 'https://github/deepakachyutha.com',
   linkedin: 'www.linkedin.com/in/deepakbattula',
+  twitter: 'https://x.com/deepak_achyutha',
   instagram: 'https://www.instagram.com/deepak_achyutha/',
   medium: 'https://medium.com/@deepakachyutha',
   locale: 'en-US',
-  // set to true if you want a navbar fixed to the top
   stickyNav: false,
   analytics: {
-    // If you want to use an analytics provider you have to add it to the
-    // content security policy in the `next.config.js` file.
-    // supports Plausible, Simple Analytics, Umami, Posthog or Google Analytics.
     umamiAnalytics: {
       // We use an env variable for this site to avoid other users cloning our analytics ID
       umamiWebsiteId: process.env.NEXT_UMAMI_ID, // e.g. 123e4567-e89b-12d3-a456-426614174000
