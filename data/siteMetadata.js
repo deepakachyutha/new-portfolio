@@ -18,6 +18,8 @@ const siteMetadata = {
   twitter: 'https://x.com/deepak_achyutha',
   instagram: 'https://www.instagram.com/deepak_achyutha/',
   medium: 'https://medium.com/@deepakachyutha',
+  allpoetsociety: 'https://allpoetssociety.com/your-profile',
+  hellopoetry: 'https://hellopoetry.com/your-profile',
   locale: 'en-US',
   stickyNav: false,
   analytics: {

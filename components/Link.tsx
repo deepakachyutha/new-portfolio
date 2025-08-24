@@ -4,21 +4,22 @@ import type { LinkProps } from 'next/link'
 import { AnchorHTMLAttributes } from 'react'
 
 const CustomLink = ({ href, ...rest }: LinkProps & AnchorHTMLAttributes<HTMLAnchorElement>) => {
-  const isInternalLink =
-    href && !href.endsWith('.pdf') && (href.startsWith('/') || href.startsWith('#'))
+  const isInternalLink = href && href.startsWith('/')
   const isAnchorLink = href && href.startsWith('#')
+  const isPdfLink = href && href.endsWith('.pdf')
 
-  if (isInternalLink) {
-    return <Link className="break-words" href={href} {...rest} />
+  // Rule: Internal links that are not PDFs open in the same tab.
+  if (isInternalLink && !isPdfLink) {
+    return <Link href={href} {...rest} />
   }
 
+  // Rule: Anchor links on the same page open in the same tab.
   if (isAnchorLink) {
-    return <a className="break-words" href={href} {...rest} />
+    return <a href={href} {...rest} />
   }
 
-  return (
-    <a className="break-words" target="_blank" rel="noopener noreferrer" href={href} {...rest} />
-  )
+  // Rule: All other links (External websites, PDFs) open in a new tab.
+  return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />
 }
 
 export default CustomLink

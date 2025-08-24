@@ -12,7 +12,10 @@ import {
   Medium,
   Bluesky,
 } from './icons'
+import AllPoetsSociety from './allpoets'
+import HelloPoetry from './hellopoet'
 
+// The complete dictionary of all your icons
 const components = {
   mail: Mail,
   github: Github,
@@ -26,6 +29,8 @@ const components = {
   instagram: Instagram,
   medium: Medium,
   bluesky: Bluesky,
+  allpoetsociety: AllPoetsSociety,
+  hellopoetry: HelloPoetry,
 }
 
 type SocialIconProps = {
@@ -34,26 +39,29 @@ type SocialIconProps = {
   size?: number
 }
 
-const SocialIcon = ({ kind, href, size = 8 }: SocialIconProps) => {
+const SocialIcon = ({ kind, href, size = 6 }: SocialIconProps) => {
   if (
     !href ||
     (kind === 'mail' && !/^mailto:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(href))
-  )
+  ) {
     return null
+  }
 
   const SocialSvg = components[kind]
 
+  if (!SocialSvg) {
+    return null
+  }
+
   return (
     <a
-      className="text-sm text-gray-500 transition hover:text-gray-600"
+      className="flex items-center space-x-2 text-sm text-gray-500 transition hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400"
       target="_blank"
       rel="noopener noreferrer"
       href={href}
     >
-      <span className="sr-only">{kind}</span>
-      <SocialSvg
-        className={`hover:text-primary-500 dark:hover:text-primary-400 fill-current text-gray-700 dark:text-gray-200 h-${size} w-${size}`}
-      />
+      <SocialSvg className={`h-${size} w-${size} fill-current`} />
+      <span className="hidden capitalize sm:block">{kind.replace('-', ' ')}</span>
     </a>
   )
 }
