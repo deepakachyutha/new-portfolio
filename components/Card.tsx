@@ -10,10 +10,7 @@ const Card = ({ title, description, imgSrc, href }) => (
     >
       {imgSrc && (
         <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-t-md bg-gray-100 dark:bg-gray-800">
-          <img
-            alt={title}
-            src={imgSrc}
-            className="h-full w-full object-cover object-center" />
+          <img alt={title} src={imgSrc} className="h-full w-full object-cover object-center" />
         </div>
       )}
       <div className="p-6">
