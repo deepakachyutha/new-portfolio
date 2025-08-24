@@ -6,15 +6,15 @@ const siteMetadata = {
   description:
     'Hello. This is a Website-Portfolio of Deepak Battula, collection of my projects, blogs and ideas. Check out my about page to know more about me.',
   language: 'English, Hindi, Telugu',
-  theme: 'system', // system, dark or light
+  theme: 'system',
   siteUrl: 'https://new-portfolio-r18dvf7us-deepakachyuthas-projects.vercel.app/about',
   siteRepo: 'https://github.com/deepakachyutha/new-portfolio',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'deepakbattula9160@gmail.com',
-  github: 'https://github/deepakachyutha.com',
-  linkedin: 'www.linkedin.com/in/deepakbattula',
+  github: 'https://github.com/deepakachyutha',
+  linkedin: 'https://www.linkedin.com/in/deepakbattula/',
   twitter: 'https://x.com/deepak_achyutha',
   instagram: 'https://www.instagram.com/deepak_achyutha/',
   medium: 'https://medium.com/@deepakachyutha',
