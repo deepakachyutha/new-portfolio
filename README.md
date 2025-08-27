@@ -1,8 +1,8 @@
 # Deepak Battula - Personal Portfolio
 
-This repository contains the complete source code for my personal website, portfolio, and blog. It's my digital home base where I showcase my projects and share my learnings on my journey into AI and Data Science.
+This repository contains the complete source code for my personal website, portfolio, and blog. It's my digital base where I showcase my projects and share my learnings, experiences on my journey into AI and Data Science.
 
-** View the live, deployed site:** [**new-portfolio.vercel.app/**](https://new-portfolio-ixk6r6xli-deepakachyuthas-projects.vercel.app)
+** View the live site:** [**new-portfolio.vercel.app/**](https://new-portfolio-virid-iota.vercel.app/)
 
 ---
 
@@ -10,10 +10,10 @@ This repository contains the complete source code for my personal website, portf
 
 This project is built with a modern, professional tech stack:
 
-- **Framework:** [Next.js](https://nextjs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Content:** MDX (Markdown with JSX)
-- **Deployment:** [Vercel](https://vercel.com/)
+* **Framework:** [Next.js](https://nextjs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Content:** MDX (Markdown with JSX)
+* **Deployment:** [Vercel](https://vercel.com/)
 
 ## Running Locally
 
@@ -45,6 +45,6 @@ See the [LICENSE](LICENSE) file for full details.
 
 ## Acknowledgements
 
-This portfolio was built upon the fantastic `tailwind-nextjs-starter-blog` template created by **Timothy Lin**. A huge thank you to him for making his work available to the open-source community.
+This portfolio was built upon the fantastic `tailwind-nextjs-starter-blog` template created by **Timothy Lin**. I thank him for making his work available to the open-source community.
 
 You can find the original repository here: [**timlrx/tailwind-nextjs-starter-blog**](https://github.com/timlrx/tailwind-nextjs-starter-blog)
