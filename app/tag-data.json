@@ -1,7 +1,9 @@
 {
+  "development": 1,
+  "website": 1,
+  "personal": 2,
   "introduction": 1,
   "ai": 1,
-  "personal": 1,
   "car": 1,
   "car-crashes": 1,
   "safety": 1
