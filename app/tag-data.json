@@ -1,10 +1,14 @@
 {
+  "project": 1,
+  "ai": 2,
+  "cybersecurity": 1,
+  "nlp": 1,
+  "collaboration": 1,
   "development": 1,
   "website": 1,
   "personal": 2,
-  "introduction": 1,
-  "ai": 1,
   "car": 1,
   "car-crashes": 1,
-  "safety": 1
+  "safety": 1,
+  "introduction": 1
 }
